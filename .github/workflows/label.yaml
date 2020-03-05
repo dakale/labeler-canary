@@ -1,0 +1,6 @@
+name: label
+on: push
+jobs:
+  label-prs:
+    uses: actions/labeler@v2
+    
