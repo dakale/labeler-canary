@@ -10,7 +10,7 @@ jobs:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         configuration-path: ".github/labeler.yml"
     - name: Test pagination
-      uses: actions/labeler@dakale/paginate-sync
+      uses: actions/labeler@releases/v2
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         configuration-path: ".github/many-files.yml"
