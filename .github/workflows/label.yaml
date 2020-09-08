@@ -8,3 +8,9 @@ jobs:
       uses: actions/labeler@v3-preview
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
+        configuration-path: ".github/labeler.yml"
+    - name: Test pagination
+      uses: actions/labeler@main
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        configuration-path: ".github/many-files.yml"
