@@ -19,3 +19,8 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         configuration-path: ".github/many-files.yml"
+    - name: Test pagination on main
+      uses: actions/labeler@main
+      with:
+        repo-token: ${{ secrets.GITHUB_TOKEN }}
+        configuration-path: ".github/many-files.yml"
